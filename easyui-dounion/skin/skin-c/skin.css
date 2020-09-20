@@ -1,0 +1,8 @@
+@charset "utf-8";
+.header-inner,.header {background-color: #f0a55b;}
+.tabs li.tabs-selected{border-color: #33978d;border-bottom-color: #f0a55b;background-color: #f0a55b;}
+.sys-col-sub .accordion .accordion-header-selected{background-color: #f0a55b;}
+.sys-col-sub {background-color: #383e3f;}
+.sys-col-sub .accordion .accordion-header{border-color: #4d5354;background-color: #383e3f;}
+.sys-col-sub .accordion .accordion-header:after{border-color: #1e2728;}
+.sys-col-sub .panel-body{background-color: #252829;}

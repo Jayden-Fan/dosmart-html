@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="easyui-dounion/css/storepoint_new.css">
+    <script type="text/javascript" src="easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="easyui-dounion/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="guangxi-grain">
+        <header class="header-grain">
+            <div class="grain-logo">
+                <h1><a href="javascript:void(0)" class="logo-txt">广西壮族自治区粮食和物资储备局</a></h1>
+            </div>
+            <div class="grain-search">
+                <input class="input-search" placeholder="请输入库区名称" />
+            </div>
+        </header>
+
+        <section class="map-wrap">
+            <aside class="left-view">
+                <div class="nav-bar"></div>
+            </aside>
+
+            <div class="right-view"></div>
+
+            <section class="main-view">
+                <div class="img-map">
+                    <a href="javascript:void(0);" class="map-point map-lb">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-lz">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-yl">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-nn">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-qz">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-bh">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-cz">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-bs">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-fcg">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-gg">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-wz">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-gl">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-hz">
+                        <div></div>
+                    </a>
+                    <a href="javascript:void(0);" class="map-point map-hc">
+                        <div></div>
+                    </a>
+                    <div class="txt-map"></div>
+                </div>
+                <div class="notes">
+                    <p>单位：万吨</p>
+                    <ul>
+                        <li class="s1">标准库</li>
+                        <li class="s2">示范库</li>
+                        <li class="s3">高级库</li>
+                    </ul>
+
+                </div>
+                <div class="list-point">
+                    <a href="javascript:void(0);" class="spoint mark3 sp1">
+                        <div>
+                            <h3>广西军粮配送中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp2">
+                        <div>
+                            <h3>广西黎塘国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark2 sp3">
+                        <div>
+                            <h3>广西南宁粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp4">
+                        <div>
+                            <h3>广西田东粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp5">
+                        <div>
+                            <h3>苍梧县粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp6">
+                        <div>
+                            <h3>广西梧州国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp7">
+                        <div>
+                            <h3>广西梧州塘源国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp8">
+                        <div>
+                            <h3>蒙山县粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp9">
+                        <div>
+                            <h3>藤县粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp10">
+                        <div>
+                            <h3>浦北县粮食局直属库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp11">
+                        <div>
+                            <h3>钦北区大寺中心粮所</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp12">
+                        <div>
+                            <h3>钦州市储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp13">
+                        <div>
+                            <h3>横县储备粮管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp14">
+                        <div>
+                            <h3>隆安县粮食收储有限责任公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp15">
+                        <div>
+                            <h3>马山县粮食储备中心库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp16">
+                        <div>
+                            <h3>南宁市邕宁区粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp17">
+                        <div>
+                            <h3>上林县中心粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp18">
+                        <div>
+                            <h3>武鸣双桥粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp19">
+                        <div>
+                            <h3>广西柳州黄村国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp20">
+                        <div>
+                            <h3>柳州市五里卡粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp21">
+                        <div>
+                            <h3>融安县储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp22">
+                        <div>
+                            <h3>融水苗族自治县储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp23">
+                        <div>
+                            <h3>港南区粮食中心储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp24">
+                        <div>
+                            <h3>平南县粮食中心储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp25">
+                        <div>
+                            <h3>港口区光坡粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp26">
+                        <div>
+                            <h3>田林县储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp27">
+                        <div>
+                            <h3>田阳县田州粮所百育库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp28">
+                        <div>
+                            <h3>凌云县粮油购销管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp29">
+                        <div>
+                            <h3>玉林市福绵粮食收储有限公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark2 sp30">
+                        <div>
+                            <h3>北流市兴民粮食直属库有限公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp31">
+                        <div>
+                            <h3>兴业县粮食储备管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp32">
+                        <div>
+                            <h3>陆川县中心粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp33">
+                        <div>
+                            <h3>容县粮食储备中心库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp34">
+                        <div>
+                            <h3>广西百色大同国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp35">
+                        <div>
+                            <h3>靖西市储备粮管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp36">
+                        <div>
+                            <h3>西林县粮食储备管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp37">
+                        <div>
+                            <h3>贺州市恒丰储备粮管理有限公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp38">
+                        <div>
+                            <h3>八步区粮油管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp39">
+                        <div>
+                            <h3>昭平县粮食储备中心库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp40">
+                        <div>
+                            <h3>钟山公安广西粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp41">
+                        <div>
+                            <h3>富川瑶族自治县粮食贸易总公司古城粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp42">
+                        <div>
+                            <h3>东兰县储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp43">
+                        <div>
+                            <h3>凤山县中心粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp44">
+                        <div>
+                            <h3>来宾市粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark2 sp45">
+                        <div>
+                            <h3>兴宾区储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp46">
+                        <div>
+                            <h3>象州县储备粮管理公司罗秀库区</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp47">
+                        <div>
+                            <h3>合山市中心粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp48">
+                        <div>
+                            <h3>崇左市直属库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp49">
+                        <div>
+                            <h3>天等县粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp50">
+                        <div>
+                            <h3>凭祥夏石粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp51">
+                        <div>
+                            <h3>自治区储备粮防城港直属库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp52">
+                        <div>
+                            <h3>广西柳州国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark2 sp53">
+                        <div>
+                            <h3>广西柳州粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp54">
+                        <div>
+                            <h3>广西贵港粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp55">
+                        <div>
+                            <h3>广西钦州粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark2 sp56">
+                        <div>
+                            <h3>广西北海国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp57">
+                        <div>
+                            <h3>广西临桂粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp58">
+                        <div>
+                            <h3>三江侗族自治县粮食购销和储备粮管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp59">
+                        <div>
+                            <h3>鹿寨县储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp60">
+                        <div>
+                            <h3>广西全州国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp61">
+                        <div>
+                            <h3>兴安县粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp62">
+                        <div>
+                            <h3>灌阳县宏泰粮油有限责任公司新街粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp63">
+                        <div>
+                            <h3>恭城县储备粮食管理公司西岭粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp64">
+                        <div>
+                            <h3>桂林市第一粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp65">
+                        <div>
+                            <h3>桂林市第三粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp66">
+                        <div>
+                            <h3>永福苏桥粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp67">
+                        <div>
+                            <h3>平乐二塘粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp68">
+                        <div>
+                            <h3>合浦平田星岛湖粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp69">
+                        <div>
+                            <h3>广西粮食局</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp70">
+                        <div>
+                            <h3>防城港市储备粮管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp71">
+                        <div>
+                            <h3>上思县储备粮管理中心上元储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp72">
+                        <div>
+                            <h3>贵港市覃塘区粮食局直属粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp73">
+                        <div>
+                            <h3>玉林市石鼓塘粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp74">
+                        <div>
+                            <h3>博白县粮食局直属库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp75">
+                        <div>
+                            <h3>玉林市南江粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp76">
+                        <div>
+                            <h3>百色市粮食局百色粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp77">
+                        <div>
+                            <h3>德保县储备粮管理中心</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp78">
+                        <div>
+                            <h3>田东县储备粮管理公司</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp79">
+                        <div>
+                            <h3>平果县直属储备粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp80">
+                        <div>
+                            <h3>广西河池国家粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp81">
+                        <div>
+                            <h3>宜州市粮食局直属粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp82">
+                        <div>
+                            <h3>环江县粮食局直属粮库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp83">
+                        <div>
+                            <h3>都安安阳广西粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint sp84">
+                        <div>
+                            <h3>武宣县粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="spoint mark3 sp85">
+                        <div>
+                            <h3>广西融安粮食储备库</h3>
+                            <p>库房总容量：11000吨</p>
+                            <p>储备粮性质：其他</p>
+                            <p>储备粮总量：1000吨</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>登录页</title>
+    <link rel="stylesheet" type="text/css" href="easyui-dounion/css/login.css">
+    <script type="text/javascript" src="easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="easyui/jquery.easyui.min.js"></script>
+	<script src="js/bootstrapValidator.min.js"></script>
+	<script src="js/login.js"></script>
+</head>
+
+<body class="login-bg">
+    <div class="login-header">
+        <h1 class="logo">
+            <a href="javascript:void(0)">
+                <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%">
+                    <image xlink:href="easyui-dounion/images/logo/logo.svg" height="100%" width="100%" />
+                </svg>
+            </a>
+        </h1>
+        <a class="gxmap-enter" href="javascript:void(0);" title="广西粮库智能化管理系统"></a>
+    </div>
+    <div class="login-slide-box">
+        <div id="vOuter" class="login-slide">
+            <div id="vMiddle" class="login-box-wrap">
+                <div id="vInner" class="login-box">
+                    <div class="hd">
+                        <div class="login-switch">
+                            <i class="icon-quick" style="display:none"></i>
+                            <i class="icon-static"></i>
+                        </div>
+                    </div>
+                    <div class="bd">
+                        <!--电脑登录 S-->
+                        <div class="static-form" style="display:block">
+                            <h2 class="login-title">用户登录</h2>
+                            <form id="login">
+                                <div class="login-msg error"><i></i><span class="error">用户名/密码/验证码不正确</span></div>
+                                <div class="field field-username">
+                                    <label for="f_username" class="f-title"></label><input id="f_username" name="account"
+                                        class="input-text" type="text" placeholder="用户名" />
+                                </div>
+                                <div class="field field-pwd">
+                                    <label for="f_pwd" class="f-title"></label><input id="pwd" class="input-text" name="password"
+                                        type="password" placeholder="密码" />
+                                </div>
+                                <div class="field field-vcode"><label for="f_code" class="f-title"></label><input
+                                        id="f_lzm" class="input-text" type="text" placeholder="验证码" /><img
+                                        src="easyui-dounion/images/login/img-code.png" class="img-code" /><a
+                                        class="change-code" href="javascript:void(0)">换一张</a></div>
+                                <div class="login-links">
+                                    <label class="f-remember" for="f_remember"><input type="checkbox" id="f_remember"
+                                            checked="checked">记住密码</label>
+                                </div>
+                                <div class="login-button">
+                                    <!-- <button onclick="login()" class="btn-login">登录</button> -->
+                                    <button type="submit" class="btn-login">登录</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--电脑登录 E-->
+                        <!--扫码登录 S-->
+                        <div class="static-form" style="display:none">
+                            <h2 class="login-title">手机扫码，安全登录</h2>
+                            <div class="qrcode-mod" style="display:none">
+                                <div class="qrcode-main">
+                                    <!-- <div class="qrcode-img"><img src="easyui-dounion/images/img-qrcode.png"></div> -->
+                                    <div class="msg-err">
+                                        <h6>二维码已失效</h6>
+                                        <a href="javascript:void(0);" class="refresh J_QRCodeRefresh">请点击刷新</a>
+                                    </div>
+                                </div>
+                                <div class="qrcode-desc">
+                                    <i class="icon-scan"></i>
+                                    <p>
+                                        <span>打开 手机端 | 智能粮库系统</span><br />
+                                        <span>扫一扫登录</span></p>
+                                </div>
+                            </div>
+                            <div class="qrcode-msg" style="display:none">
+                                <div class="msg-ok">
+                                    <div class="msg-icon">
+                                        <i class="icon-ok"></i>
+                                        <i class="icon-phone"></i>
+                                    </div>
+                                    <h6>扫描成功！</h6>
+                                    <p>请在手机上确认登录</p>
+                                    <div class="link"><a href="javascript:void(0);"
+                                            class="light-link J_QRCodeRefresh">返回二维码登录</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--扫码登录 E-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="login-conin">
+        <ul class="login-properties">
+            <li class="lp1"><i></i><strong>一切尽在掌握</strong><span>全方位、全过程的管理与经营</span></li>
+            <li class="lp2"><i></i><strong>决策更加及时准确</strong><span>丰富的图形报表、先进的分析模型</span></li>
+            <li class="lp3"><i></i><strong>办公随时随地</strong><span>支持平台多终端操作，更方便快捷</span></li>
+            <li class="lp4"><i></i><strong>安全高效、务实创新</strong><span>打造数字化、智能化的智慧粮库</span></li>
+        </ul>
+    </div>
+    <div class="login-footer">
+        <p><span class="en">©COPYRIGHT 2018</span>, 上海达联电子科技有限公司</p>
+    </div>
+</body>
+
+<script type="text/javascript">
+	/* function login() {
+		var username = $("#username").val();
+		var password = $('#pwd').val();
+		var ucenterUser = {
+				account : username,
+				password : password
+		};
+		debugger;
+		$.ajax({
+			type: "POST",
+			url: "dosmart-web/index/login.json",
+			data: ucenterUser,
+			dataType: "json",
+			success: function(data){
+				if(data.success == true) {
+					location.href = '/domart-web/map.html';
+				}
+				console.info(data);
+     
+                window.location.href=url ;
+			},
+			error:function(){
+                alert("error");
+            }  
+		});
+	} */
+</script>
+
+</html>

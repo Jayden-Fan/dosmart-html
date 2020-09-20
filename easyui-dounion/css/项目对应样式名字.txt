@@ -1,0 +1,27 @@
+login.css　　　　　登录页
+public.css　　　　 系统头部条
+home.css　　  　　系统大首页
+mainlayout.css    　与首页同级页面
+video.css　　　　　视频弹出层
+
+Ｔ字型系统
+layout.css　　 　　Ｔ字型系统都需引用
+car.css　　　　　　车辆引导
+security.css            智能安防
+
+storepoint.css　　　库点浅蓝版
+storepoint_new.css　库点深蓝版
+
+terminal.css　　　　终端机
+
+智能仓储
+map.css　　　地图
+media-query.css　　分辩率
+warehouse.css    仓房
+
+
+不常更新的插件样式
+laydate.css
+lightbox.css
+swiper.css
+virtualkeyboard.css

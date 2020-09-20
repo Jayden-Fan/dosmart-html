@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+/* color */
+
+.approval-entry-list li a:hover,
+.file-annex a,
+.text-tips a,
+.tracking-operat .mileage-item strong a:hover,
+.mileage-item .con,
+.mileage-item .num,
+.vehicle-links a,
+.sys-tabs-a .tabs li.tabs-selected a.tabs-inner,
+.sys-tabs-a .tabs-selected .tabs-title,
+.sys-toolbar .l-btn-icon-left .l-btn-text,
+.datagrid a,
+.link-search-show,
+.link-search-stop,
+.datagrid-wrap .datagrid-toolbar .webuploader-pick,
+.datagrid-wrap .datagrid-toolbar .l-btn:hover,
+.sys-link .l-btn-text,
+.notice-wrap .news-list li a,
+.notice-wrap .more,
+.col-sub-menu .tree-title a:hover,
+.col-sub-menu .tree-node-hover .tree-title,
+.col-sub-menu .tree-node-selected .tree-title a,
+.shortcut-entry .link a,
+.content-empty a,
+.entry-tree a,
+.code-box li a h3,
+.mileage-item strong {
+    color: #687de1;
+}
+
+.datagrid-row-over a,
+.datagrid-row-selected a,
+.sys-col-sub .accordion .accordion-header .panel-title,
+.sys-col-sub .accordion .accordion-header:hover .panel-title,
+.col-sub-menu .tree-title,
+.col-sub-menu .tree-title a,
+.col-sub-menu .tree-node .tree-folder+.tree-title {
+    color: #fff;
+}
+
+.underway .num,
+.tracking-operat .underway strong a:hover {
+    color: #fb9337;
+}
+
+.tracking-operat .no-permiss strong a:hover {
+    color: #000;
+}
+
+
+/* borderbackground */
+
+.vehicle-links a.curr,
+.tabs li.tabs-selected,
+.dialog-button .l-btn.c2,
+.dialog-button .l-btn.c2:hover,
+.fixed-bbtn .l-btn.c1,
+.form-auto-list .l-btn.c1,
+.form-auto-list .l-btn.c1:hover {
+    border-color: #5b70d4;
+    background-color: #687de1;
+}
+
+.sys-col-sub .accordion .accordion-header {
+    border-color: #545a77;
+    background-color: #3e435b;
+}
+
+.sys-tabs-a .tabs li.tabs-selected {
+    background: none;
+}
+
+
+/* bordercolor */
+
+.mileage-item,
+.vehicle-links a,
+.sys-col-sub .accordion .accordion-header-selected:before,
+.sys-col-sub,
+.tabs,
+.sys-tabs-a .tabs li.tabs-selected a.tabs-inner {
+    border-color: #687de1;
+}
+
+.sys-col-sub .accordion .accordion-body {
+    border-color: #545a77;
+}
+
+.underway {
+    border-color: #fb9337;
+}
+
+.tabs li.tabs-selected,
+.tabs li a.tabs-inner {
+    border-bottom-color: #687de1;
+}
+
+
+/* background */
+
+.avatar-upload .webuploader-pick,
+.schedule-sider .l-btn-selected,
+.header-inner,
+.header,
+.window .window-header,
+.sys-col-sub .accordion .accordion-header-selected,
+.sub-menu-collect,
+.datagrid-row-over,
+.datagrid-row-selected,
+.gross-weigh .btn-weigh {
+    background-color: #687de1;
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+    background-color: #646a82;
+}
+
+.sys-toolbar .l-btn:hover,
+.datagrid-wrap .datagrid-toolbar .l-btn:hover,
+.datagrid-wrap .datagrid-toolbar .webuploader-pick-hover {
+    background-color: #edf0ff;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #5c6177;
+}
+
+.sys-col-sub {
+    background-color: #3e435b;
+}
+
+.sys-col-sub .panel-body {
+    background-color: #262a40;
+}
+
+.tagbox-label {
+    background-color: #e9edff;
+}
+
+
+/* backgroundimg */
+
+.sys-col-sub .accordion-collapse,
+.accordion-expand {
+    background-image: url(../skin-a/images/accordion-arrow.png);
+}
+
+.col-sub-menu .tree .tree-collapsed,
+.col-sub-menu .tree .tree-expanded,
+.col-sub-menu .tree .tree-node-last .tree-collapsed,
+.col-sub-menu .tree .tree-node-last .tree-expanded,
+.col-sub-menu .tree .tree-root-first .tree-collapsed,
+.col-sub-menu .tree .tree-root-first .tree-expanded {
+    background-image: url(../skin-a/images/menu-tree-hit.png);
+}
+
+.icon-home,
+.icon-allocat,
+.icon-log,
+.icon-abnormal,
+.icon-analysis,
+.icon-knowledge,
+.icon-site,
+.icon-basis,
+.icon-dynamic,
+.icon-admin,
+.icon-power,
+.icon-depl,
+.icon-basics,
+.icon-flow,
+.icon-quality,
+.icon-finance,
+.icon-business,
+.icon-capital,
+.icon-grain,
+.icon-mount,
+.icon-task,
+.icon-granary,
+.icon-storage,
+.icon-food,
+.icon-basicd,
+.icon-contract,
+.icon-buy,
+.icon-sales,
+.icon-transfer,
+.icon-settle,
+.icon-reportm,
+.icon-scale,
+.icon-approval,
+.icon-office,
+.icon-document,
+.icon-auxiliary,
+.icon-archives,
+.icon-sms,
+.icon-file,
+.icon-report,
+.icon-personnel,
+.icon-informat,
+.icon-contract,
+.icon-wage,
+.icon-post,
+.icon-analysis,
+.icon-basic,
+.icon-performance,
+.icon-library,
+.icon-norm,
+.icon-entra,
+.icon-sampl,
+.icon-inspect,
+.icon-weigh,
+.icon-laid,
+.icon-settle,
+.icon-trackq,
+.icon-statis {
+    background-image: url(../skin-a/images/menu-icons.png);
+}
+
+.icon-add,
+.icon-abandon,
+.icon-examine,
+.icon-remove,
+.icon-view,
+.icon-reserve,
+.icon-noreserve,
+.icon-send,
+.icon-send,
+.icon-redo,
+.icon-print,
+.icon-gold,
+.icon-person,
+.icon-close,
+.icon-open,
+.icon-set,
+.icon-lock,
+.icon-copy,
+.icon-weight,
+.icon-autoweight,
+.icon-split,
+.icon-edit,
+.icon-reload,
+.icon-check,
+.icon-havepay,
+.icon-cancel,
+.icon-mapping,
+.icon-change,
+.icon-select,
+.icon-data,
+.icon-download,
+.icon-import,
+.icon-export,
+.icon-fileup,
+.icon-filedown,
+.icon-transmit,
+.icon-tcancel,
+.icon-backfill,
+.icon-pay,
+.icon-tovoid,
+.icon-assign,
+.icon-confirm,
+.icon-noconfirm,
+.icon-recycle,
+.icon-exception,
+.icon-no,
+.icon-tip,
+.icon-free,
+.icon-face,
+.icon-passport,
+.icon-batch,
+.icon-notice,
+.icon-work,
+.icon-release,
+.icon-paste,
+.icon-save,
+.icon-update,
+.icon-logout,
+.icon-retreat,
+.icon-track {
+    background-image: url(../skin-a/images/toolbar-icons.png);
+}
+
+.tree-lines .tree-collapsed,
+.tree-lines .tree-root-first .tree-collapsed,
+.tree-line,
+.tree-file,
+.tree-join,
+.tree-lines .tree-node-last .tree-collapsed,
+.tree-lines .tree-root-one .tree-collapsed,
+.tree-joinbottom,
+.tree-lines .tree-expanded,
+.tree-lines .tree-root-first .tree-expanded,
+.tree-folder,
+.tree-lines .tree-node-last .tree-expanded {
+    background-image: url(../skin-a/images/tree-icons.png);
+}
+
+.mileage-item .num:before,
+.mileage-pic .star:before,
+.mileage-pic .end:before,
+.mileage-pic .endover:before {
+    background-image: url('../skin-a/images/mileage-dian.png');
+}
+
+.pagination-first,
+.pagination-prev,
+.pagination-next,
+.pagination-last,
+.pagination-load {
+    background-image: url('../skin-a/images/pagination-icons.png');
+}
+
+.datagrid-wrap .datagrid-toolbar .ad-fm-add-annex {
+    background-image: url('../skin-a/images/icon-upload.png');
+}
+
+.link-search-show,
+.link-search-stop {
+    background-image: url('../skin-a/images/icon-search-arrow.png');
+}
+
+.identity-authent-m .code-box li a i {
+    background-image: url('../skin-a/images/code-m-imgs.png');
+}
+
+.link-btn.m-btn .m-btn-downarrow {
+    background-image: url('../skin-a/images/menu-arrow.png');
+}
+
+.pic-upload-a .ad-fm-add-annex {
+    background-image: url('../skin-a/images/upload-img2.png');
+}
+
+.approval-entry-list li i {
+    background-image: url(../skin-a/images/ae-sprices.png);
+}
+
+.sys-tabs-img .tabs-icon {
+    background-image: url(../skin-a/images/tab-icons.png);
+}
+
+.tagbox-remove {
+    background-image: url('../skin-a/images/tagbox-icons.png');
+}
+
+.mileage-item strong {
+    background-image: url('../skin-a/images/dian2.png');
+}
+
+.code-box li a i {
+    background-image: url('../skin-a/images/code-imgs.png');
+}
+
+.mileage-pic {
+    background-image: url('../skin-a/images/mileage-bg.png');
+}
+
+.underway strong {
+    background-image: url(../skin-a/images/dian2-1.png);
+}
+
+.mileage-item p {
+    background-image: url('../skin-a/images/dian3.png');
+}
+
+.ad-fm-add-annex {
+    background-image: url(../skin-a/icons/fj-icon.png);
+}
+
+.img-scan {
+    background-image: url(../skin-a/images/img-scan.png);
+}
+
+.tracking-operat .underway strong a:hover i {
+    background-position: center -210px;
+}
+
+.tracking-operat .underway strong a i {
+    background-position: center -140px;
+}
+
+
+/* other */
+
+.sys-col-sub .accordion .accordion-header:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #1a1e33;
+}

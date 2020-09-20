@@ -1,0 +1,410 @@
+@clight: #5F75DD;
+@btnMenuColor: #22d188;
+@oColor: #22d188;
+@cblue: #2196F3;
+@cgreen: #00c178;
+@cyellow: #ffba46;
+@corange: #ff8931;
+@cred: #ff4a31;
+@bColor: @oColor;
+@warnColor: #f84e4e;
+@normalColor: @oColor;
+@url: '../images/';
+@lurl: '../images/l/';
+@murl: '../images/m/';
+@surl: '../images/s/';
+@nurl: '../images/newhome/';
+@zd: '../images/terminal/';
+@cc: '../images/warehouse/';
+@af: '../images/security/';
+@kd: '../images/storepoint/';
+@fx: '../images/fx/';
+
+.size(@w, @h) {
+  width: @w;
+  height: @h;
+}
+
+.radius(@r: 4px) {
+  -moz-border-radius: @r;
+  -webkit-border-radius: @r;
+  border-radius: @r;
+}
+
+.bgset(@url1, @url2) {
+  background-image: url('../images/@{url1}');
+  background-image: -webkit-image-set(url('../images/@{url1}') 1x,
+    url('../images/@{url2}') 2x);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.gradient(@c1, @c2) {
+  background-image: -moz-linear-gradient(top, @c1 0%, @c2 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @c1), color-stop(100%, @c2));
+  background-image: -webkit-linear-gradient(top, @c1 0%, @c2 100%);
+  background-image: -o-linear-gradient(top, @c1 0%, @c2 100%);
+  background-image: -ms-linear-gradient(top, @c1 0%, @c2 100%);
+  background-image: linear-gradient(to bottom, @c1 0%, @c2 100%);
+  filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{c1}', endColorstr='@{c2}', GradientType=0)";
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+// commom style
+.box-center {
+  .flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.s-between,
+.sbetween {
+  .flex;
+  justify-content: space-between;
+
+  &.items-center {
+    .items-center;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.fbold {
+  font-weight: 600;
+}
+
+.f0 {
+  font-size: 0;
+}
+
+.f10 {
+  display: inline-block;
+  font-size: 12px;
+  transform: scale(10/12);
+}
+
+.f12 {
+  font-size: 12px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f16 {
+  font-size: 16px !important;
+}
+
+.f18 {
+  font-size: 18px !important;
+}
+
+.f20 {
+  font-size: 20px !important;
+}
+
+.f24 {
+  font-size: 24px !important;
+}
+
+.mgl4 {
+  margin-left: 4px;
+}
+
+.mgr10 {
+  margin-right: 10px;
+}
+
+.mgt20 {
+  margin-top: 20px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.tc {
+  text-align: center !important;
+}
+
+.tl {
+  text-align: left !important;
+}
+
+.tr {
+  text-align: right !important;
+}
+
+.mau {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cred {
+  color: @cred;
+}
+
+.cwhite {
+  color: #fff;
+}
+
+.pr {
+  position: relative;
+}
+
+.pa {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.oh {
+  overflow: hidden;
+}
+
+.bgWhite {
+  background-color: #fff;
+}
+
+.vat {
+  vertical-align: top;
+}
+
+.vam {
+  vertical-align: middle;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.mr5 {
+  margin-right: 5px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mt5 {
+  margin-top: 5px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt26 {
+  margin-top: 26px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb12 {
+  margin-bottom: 12px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.mb26 {
+  margin-bottom: 26px;
+}
+
+.mb28 {
+  margin-bottom: 28px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb35 {
+  margin-bottom: 35px;
+}
+
+.mt150 {
+  margin-top: 150px;
+}
+
+.pl18 {
+  padding-left: 18px;
+}
+
+.pl20 {
+  padding-left: 18px;
+}
+
+.pl15 {
+  padding-left: 15px;
+}
+
+.pr0 {
+  padding-right: 0 !important;
+}
+
+.pt0 {
+  padding-top: 0 !important;
+}
+
+.pr15 {
+  padding-right: 15px;
+}
+
+.pr18 {
+  padding-right: 18px;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pb20 {
+  padding-bottom: 20px;
+}
+
+.mb25 {
+  margin-bottom: 25px;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.vt {
+  vertical-align: top;
+}
+
+.vm {
+  vertical-align: middle;
+}
+
+.vhidden {
+  visibility: hidden;
+}
+
+.vb {
+  vertical-align: bottom;
+}
+
+.c0 {
+  color: #000 !important;
+}
+
+.c3 {
+  color: #333 !important;
+}
+
+.c6 {
+  color: #666 !important;
+}
+
+.c9 {
+  color: #999 !important;
+}
+
+.noBorder {
+  border: none !important;
+}
+
+.noBg {
+  background: none !important;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.clearfix {
+  &:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.flexv {
+  .flex;
+  flex-direction: column;
+}
+
+// extend 用法
+// .test {
+//     &:extend(.f14,.tc);
+//   }
+.hoverIcon(@img) {
+  background-image: url('../images/newhome/@{img}.png');
+
+  &:hover,
+  &.cur,
+  &.on {
+    background-image: url('../images/newhome/@{img}_2.png');
+    opacity: 1;
+  }
+}
+
+.f26 {
+  font-size: 26px;
+}

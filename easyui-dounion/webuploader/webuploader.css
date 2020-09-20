@@ -1,0 +1,8 @@
+.webuploader-container{position:relative;}
+.webuploader-element-invisible{position:absolute!important;clip:rect(1px 1px 1px 1px); /* IE6, IE7 */clip:rect(1px,1px,1px,1px);}
+.webuploader-pick{cursor:pointer;width:70px;height:21px;line-height:18px;overflow:hidden;}
+.webuploader-pick-disable{opacity:0.6;pointer-events:none;}
+.ad-fm-add-annex{display: inline-block;background: url(fj-icon.png) no-repeat 0 2px;padding-left: 22px;}
+/*--- 进度条bar ---*/
+.progress_bar{position:relative;display:inline-block;width:100px;height:6px;margin-right:10px;overflow:hidden;border:1px solid #4e9424;background-color:#f1f1f1;}
+.progress_bar i{position:absolute;left:0px;top:0px;display:block;height:6px;background-color:#b9dea3;}

@@ -1,0 +1,20 @@
+images里面默认的图为Ｔ字型系统图
+
+login　　登录页
+main　　与首页同级的图片
+newhome　　系统首页
+public　　头部header图
+weather　　天气预报
+
+storepoint　　库区点地图
+terminal　　　终端机
+video　　视频弹层图
+
+fx    智能防讯
+security　　智能安防
+warehouse　　智能仓储图
+
+
+
+
+pics　不用拷贝

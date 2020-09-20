@@ -1,0 +1,416 @@
+@import 'common.less';
+@btnColor: #2196f3;
+
+
+
+.map-wrapper {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.vehicle-search {
+  &:extend(.pa);
+  top: 30px;
+  left: 20px;
+  z-index: 5;
+  width: 250px;
+  min-height: 80px;
+  max-height: 90%;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 5px;
+
+  .hd {
+    position: relative;
+
+    h2 {
+      padding-left: 20px;
+      font-size: 16px;
+
+      span {
+        color: #999;
+        font-size: 12px;
+      }
+    }
+
+    .text-link {
+      position: absolute;
+      right: 20px;
+      top: 5px;
+      color: #2196f3;
+    }
+  }
+}
+
+.search-box {
+  position: relative;
+  margin: 10px 20px;
+
+  input[type="text"] {
+    width: 146px;
+    height: 28px;
+    padding: 0 28px 0 10px;
+    line-height: 28px;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff
+  }
+}
+
+
+.search-box .btn-search,
+.wcar {
+  background: url(../images/map-sprice.png) no-repeat
+}
+
+.search-box .btn-search {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 28px;
+  background-position: 5px 6px;
+}
+
+.search-content {
+  height: 500px;
+  padding: 0 2px 0 10px;
+  overflow: auto;
+
+  .tip-text {
+    padding-top: 100px;
+    color: #999;
+    text-align: center;
+  }
+}
+
+.platenum-list {
+  margin-right: 8px;
+}
+
+.platenum-list li a {
+  display: block;
+  height: 34px;
+  padding: 0 10px;
+  line-height: 34px;
+  font-size: 14px;
+  background-position: 12px -65px
+}
+
+.platenum-list li.curr a,
+.platenum-list li a:hover {
+  background-color: #eef7fd;
+  color: #2196f3;
+}
+
+.mCSB_container {
+  width: auto;
+  height: auto;
+  overflow: hidden
+}
+
+.mCustomScrollbar:focus,
+.mCustomScrollBox:focus {
+  outline: none
+}
+
+.mCustomScrollbar {
+  -ms-touch-action: pinch-zoom;
+  touch-action: pinch-zoom
+}
+
+.mCustomScrollbar.mCS_no_scrollbar,
+.mCustomScrollbar.mCS_touch_action {
+  -ms-touch-action: auto;
+  touch-action: auto
+}
+
+.mCustomScrollBox {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-width: 100%;
+  outline: 0;
+  direction: ltr
+}
+
+.mCustomScrollBox>.mCSB_scrollTools {
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  right: 0px
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  bottom: 2px;
+  right: 0;
+  height: auto
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 10px
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 6px;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  filter: ~"progid: DXImageTransform.Microsoft.gradient(enabled='true', startColorstr='#7FFFFFFF', endColorstr='#7FFFFFFF')";
+}
+
+:root .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  filter: none;
+  background-color: #c4c4c4
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: #fff
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background: #c4c4c4
+}
+
+.warehouse-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.warehouse-number li {
+  position: absolute;
+  font: 28px arial;
+  color: #666;
+}
+
+.warehouse-number li.wn1 {
+  top: 140px;
+  left: 832px;
+}
+
+.warehouse-number li.wn2 {
+  top: 140px;
+  left: 962px;
+}
+
+.wcar {
+  position: absolute;
+  width: 30px;
+  height: 32px;
+  background-position: 0 -23px;
+}
+
+.wcar i {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  width: 68px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: -34px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.wcar i:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+.wcar:hover i,
+.wcar.curr i {
+  color: #fff;
+  background-color: #2196f3;
+}
+
+.wcar:hover i:before,
+.wcar.curr i:before {
+  border-top-color: #2196f3;
+}
+
+.vehicle-trail {
+  position: absolute;
+  top: 30px;
+  width: 401px;
+}
+
+.content-empty {
+  color: #999;
+  text-align: center;
+}
+
+.i-cp {
+  &:extend(.f12, .dib, .cwhite, .vm, .tc);
+  .size(14px, 14px);
+  .radius(2px);
+  line-height: 14px;
+  margin: 0 3px 0 5px;
+}
+
+.i-ru {
+  background-color: #83c6ef;
+}
+
+.i-chu {
+  background-color: #fcc07a;
+}
+
+.search-inp-wrap {
+  &:extend(.pr);
+  width: 160px;
+}
+
+.inp-search {
+  width: 120px !important;
+}
+
+.btn-advanced {
+  &:extend(.pa, .tc, .cwhite);
+  .radius(4px);
+  .size(40px, 30px);
+  line-height: 30px;
+  background-color: @btnColor;
+  right: -50px;
+  top: 0;
+}
+
+.inp-datepicker {
+  &:extend(.mt10);
+  width: 170px !important;
+}
+
+.vehicle-result-wrap {
+  &:extend(.oh, .bgWhite, .pa);
+  .radius();
+  .size(336px, 373px);
+  top: 30px;
+  left: 280px;
+  z-index: 5;
+
+  h3 {
+    &:extend(.cwhite, .f14);
+    background-color: @btnColor;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+
+  .btn-close {
+    &:extend(.pa);
+    .size(14px, 14px);
+    background: url('@{url}/i_close.png') center no-repeat;
+    right: 20px;
+    top: 8px;
+    z-index: 100;
+  }
+
+  .bd {
+    .size(336px, 333px);
+    padding-bottom: 10px;
+    overflow: auto;
+
+    .tip-text {
+      color: #999;
+      padding-top: 150px;
+      text-align: center;
+    }
+  }
+}
+
+.list-result-vehicle {
+  padding: 10px;
+
+  li {
+    &:extend(.mb10, .cp);
+    .radius(4px);
+    border: 1px solid #ddd;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  li.cur {
+    border-color: @btnColor;
+    background-color: #eef7fd;
+  }
+}
+
+.header-result {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #fff;
+  padding: 0 10px;
+}
+
+.number-repo {
+  &:extend(.f14);
+  color: @btnColor;
+  margin-left: 3px;
+}
+
+.i-addr {
+  &:extend(.dib);
+  .size(11px, 14px);
+  background: url('@{url}/i_addr.png') center no-repeat;
+}
+
+.i-aright {
+  &:extend(.dib);
+  .size(26px, 8px);
+  background: url('@{url}/i_aright.png') center no-repeat;
+}
+
+.cont-result-vehicle {
+  &:extend(.f0);
+  padding: 10px;
+}
+
+.item-cont-result {
+  &:extend(.dib, .vt, .oh);
+  width: 66px;
+  line-height: 1.2;
+}
+
+.item-cont-result p {
+  margin-bottom: 2px
+}
+
+@media screen and (max-width:1440px) {
+  .vehicle-search {
+    height: 68%;
+  }
+
+  .search-wrapper {
+    height: 90%;
+  }
+
+  .search-content {
+    height: 98%;
+    // padding-bottom: 10px;
+  }
+}
